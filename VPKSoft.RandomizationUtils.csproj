@@ -10,7 +10,7 @@
     <DocumentationFile>bin\$(Configuration)\VPKSoft.RandomizationUtils.xml</DocumentationFile>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <Authors>VPKSoft</Authors>
-    <PackageIconUrl>https://www.vpksoft.net/site/VPKSoft.ico</PackageIconUrl>
+    <PackageIconUrl></PackageIconUrl>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://www.vpksoft.net/2015-03-31-13-33-28/libraries/utility-libraries</PackageProjectUrl>
     <PackageReleaseNotes>See: https://github.com/VPKSoft/VPKSoft.RandomizationUtils</PackageReleaseNotes>
@@ -20,6 +20,7 @@
     <RepositoryUrl>https://github.com/VPKSoft/VPKSoft.RandomizationUtils</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIcon>vpksoft_logo.png</PackageIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -27,4 +28,10 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="vpksoft_logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 </Project>
