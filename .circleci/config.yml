@@ -15,8 +15,8 @@
     
      steps:
        - checkout
-       - run: msbuild VPKSoft.RandomizationUtils/VPKSoft.RandomizationUtils.csproj /t:restore
-       - run: msbuild VPKSoft.RandomizationUtils/VPKSoft.RandomizationUtils.csproj /p:Configuration=Release
+       - run: msbuild VPKSoft.RandomizationUtils.csproj /t:restore
+       - run: msbuild VPKSoft.RandomizationUtils.csproj /p:Configuration=Release
 # No need for bleeding edge       - run: dotnet tool install --global PowerShell
        - run: 
           name: Push to NuGet
